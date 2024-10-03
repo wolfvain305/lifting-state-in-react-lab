@@ -1,5 +1,5 @@
 import React, { useState}  from 'react';
-import IngredientList from './components/IngredientList';
+import IngredientList from './components/Ingredient';
 import BurgerStack from './components/BurgerStack';
 
 import './App.css';

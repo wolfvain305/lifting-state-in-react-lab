@@ -1,19 +1,14 @@
-// src/components/IngredientList.jsx
 import React from "react";
+import Ingredient from "./Ingredient";
 
+const IngredientList =({ ingredients, addToBurger}) => {
+    return (
+        <ul>
+        {ingredients.map((ingredient) => (
+        <Ingredient key={ingredient.name} ingredient={ingredient} onAdd={addToBurger} />
+        ))}
+        </ul>
+    )
+}
 
-const IngredientList = (props) => {
-    return(
-      <ul>
-        {IngredientList.name}
-        {inBurgerStack ? (
-          <button onClick={() => onpointermove(ingredient)}>X</button>
-        ) : (
-          <button onClick={() => ongamepaddisconnected(ingredient)}>+</button>
-        )}
-      </ul>
-    ) 
-  }
-  
-  export default IngredientList;
-  
+export default IngredientList
