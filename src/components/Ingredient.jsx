@@ -1,6 +1,6 @@
 // src/components/IngredientList.jsx
 import React from "react";
-
+import IngredientList from "./IngredientList";
 
 const Ingredient = ({ingredient, onAdd, onRemove, inBurgerStack}) => {
     return(
